@@ -23,9 +23,12 @@ class Weeks extends React.Component {
         date: date
       };
       days.push(
-        <Day day={day}
+        <Day
+          key={days}
+          day={day}
           selected={selected}
-          select={select}/>
+          select={select}
+          />
       );
 
       date = date.clone();
