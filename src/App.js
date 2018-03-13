@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import Calendar from './components/Calendar';
-import Appointment from './components/Appointment';
 import './App.css';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <div className="description">
+          Calendar App built in React.js
+        </div>
         <Calendar />
       </div>
     );
